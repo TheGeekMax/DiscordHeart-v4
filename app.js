@@ -104,6 +104,38 @@ client.on('interactionCreate', async interaction => {
     eval(interaction.commandName+"(interaction,args)");
 })
 
+//embed maker
+function embed_maker (data){
+    /*
+    data : {
+        "title":"title",
+        "description":"description",
+        "url":"url",
+        "color":"color",
+        "icon":"icon",
+        "footer":"footer",
+        "fields":[
+            {
+                "name":"name",
+                "value":"value",
+                "inline":true
+            }
+        ]
+    }
+    */
+    let embed = new Discord.MessageEmbed();
+    embed.setTitle(data.title);
+    embed.setDescription(data.description);
+    embed.setURL(data.url);
+    embed.setColor(data.color);
+    embed.setThumbnail(data.icon);
+    for(let i = 0 ; i < data.fields.length;i++){
+        embed.addField(data.fields[i].name,data.fields[i].value,data.fields[i].inline);
+    }
+    return embed;
+}
+
+
 //commandes
 function ping(int, args){
     int.reply("pong");
@@ -111,4 +143,20 @@ function ping(int, args){
 
 function rand(int, args){
     int.reply((Math.floor(Math.random() * args.max) + 1).toString()+" / "+args.max);
+}
+
+function testembed(int, args){
+    int.reply({embeds:[embed_maker({
+        title:args["title"],
+        description:args["description"],
+        url:"https://discord.js.org/",
+        color:"#ff0000",
+        fields:[
+            {
+                "name":"name",
+                "value":"value",
+                "inline":true
+            }
+        ]
+    })]});
 }

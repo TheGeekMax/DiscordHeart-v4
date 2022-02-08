@@ -15,5 +15,23 @@
                 "needed":true
             }
         ]
+    },
+    {
+        "name":"testembed",
+        "description":"test embed",
+        "args":[
+            {
+                "name":"title",
+                "type":"string",
+                "description":"titre de l'embed",
+                "needed":true
+            },
+            {
+                "name":"description",
+                "type":"string",
+                "description":"description de l'embed",
+                "needed":true
+            }
+        ]
     }
 ]
