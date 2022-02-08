@@ -39,8 +39,41 @@ client.on('ready', async () => {
                         option.setName(curArg.name)
                             .setDescription(curArg.description)
                             .setRequired(curArg.needed)
-                            .setMinValue(1)
-                            .setMaxValue(100)
+                    );
+                break;
+                case "bool":
+                    current.addBooleanOption(option =>
+                        option.setName(curArg.name)
+                            .setDescription(curArg.description)
+                            .setRequired(curArg.needed)
+                    );
+                break;
+                case "mention":
+                    current.addMentionableOption(option =>
+                        option.setName(curArg.name)
+                            .setDescription(curArg.description)
+                            .setRequired(curArg.needed)
+                    );
+                break;
+                case "role":
+                    current.addRoleOption(option =>
+                        option.setName(curArg.name)
+                            .setDescription(curArg.description)
+                            .setRequired(curArg.needed)
+                    );
+                break;
+                case "string":
+                    current.addStringOption(option =>
+                        option.setName(curArg.name)
+                            .setDescription(curArg.description)
+                            .setRequired(curArg.needed)
+                    );
+                break;
+                case "channel":
+                    current.addChannelOption(option =>
+                        option.setName(curArg.name)
+                            .setDescription(curArg.description)
+                            .setRequired(curArg.needed)
                     );
                 break;
             }

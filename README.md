@@ -20,7 +20,7 @@ et creer un `.config.json` avec les informations suivantes :
 
 ## les droits du bot
 
-- A COMPLETER
+liste des permisions sur [ce site](https://discord.com/developers/docs/topics/permissions)
 
 valeur par defaut
 
