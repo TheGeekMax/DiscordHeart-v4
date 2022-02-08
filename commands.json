@@ -1,0 +1,19 @@
+[
+    {
+        "name":"ping",
+        "description":"pong !",
+        "args":[]
+    },
+    {
+        "name":"rand",
+        "description":"retourne un nb entre 0 et n",
+        "args":[
+            {
+                "name":"max",
+                "type":"int",
+                "description":"nombre max du dé",
+                "needed":true
+            }
+        ]
+    }
+]

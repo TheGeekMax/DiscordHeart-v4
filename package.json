@@ -1,0 +1,16 @@
+{
+  "name": "discord_heart",
+  "version": "4.0.0",
+  "description": "coeur V4 pour faire un bot discord",
+  "main": "app.js",
+  "scripts": {
+    "test": "node app.js"
+  },
+  "author": "WikiMax",
+  "license": "MIT",
+  "dependencies": {
+    "@discordjs/rest": "^0.3.0",
+    "axios": "^0.25.0",
+    "discord.js": "^13.6.0"
+  }
+}
