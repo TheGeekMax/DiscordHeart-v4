@@ -6,7 +6,7 @@ il faut executer cette commande :
 foo@bar:~$ npm install discord.js @discordjs/rest axios
 ```
 
-et creer un `.config.json` avec les informations suivantes :
+et creer un `config.json` avec les informations suivantes :
 
 ```json
 {
