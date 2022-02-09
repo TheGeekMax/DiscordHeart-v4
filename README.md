@@ -3,7 +3,7 @@
 il faut executer cette commande :
 
 ```console
-foo@bar:~$ npm install discord.js @discordjs/rest axios
+npm install discord.js @discordjs/rest axios
 ```
 
 et creer un `config.json` avec les informations suivantes :
