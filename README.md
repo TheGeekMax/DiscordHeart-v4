@@ -41,3 +41,8 @@ type d'arguments
 |"string"|insert une chaine de caractère|
 |"channel"|insert un channel|
 
+# TODO
+
+- ajout des boutons
+- ajout commandes comme sous groupe 
+- ajout des choix limités
